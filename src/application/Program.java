@@ -36,9 +36,7 @@ public class Program {
 		
 		System.out.println("Parcelas:");
 		for(Installment installment : contract.getInstallments() ) {
-			String dateFormatted = installment.getDueDate().format(formatter);
-			String amountFormatted = String.format("%.2f", installment.getAmount());
-			System.out.println(dateFormatted + " - " + amountFormatted);
+			System.out.println(installment);
 		}
 		
 		sc.close();
